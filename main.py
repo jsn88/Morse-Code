@@ -1,5 +1,4 @@
 import pandas as pd
-from string import punctuation
 
 def string_to_morse(text):
     morse_code = ""
