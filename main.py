@@ -9,16 +9,13 @@ def string_to_morse(text):
     for a in answer:
         if a.upper() in morse_table['Letters']:
             pos = morse_table['Letters'].index(a.upper())
-            morse_code += morse_table['Morse'][pos]
-            morse_code += ' '
+            morse_code += morse_table['Morse'][pos] + ' '
         elif a == '.':
             pos = morse_table['Letters'].index('Period')
-            morse_code += morse_table['Morse'][pos]
-            morse_code += ' '
+            morse_code += morse_table['Morse'][pos] + ' '
         elif a == ',':
             pos = morse_table['Letters'].index('Comma')
-            morse_code += morse_table['Morse'][pos]
-            morse_code += ' '
+            morse_code += morse_table['Morse'][pos] + ' '
         elif a == ' ':
             morse_code += '   '
     print(morse_code)
