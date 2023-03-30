@@ -6,7 +6,7 @@ def string_to_morse(text):
     morse_table = df.to_dict('list')
     
     pos = 0 
-    for a in answer:
+    for a in text:
         if a.upper() in morse_table['Letters']:
             pos = morse_table['Letters'].index(a.upper())
             morse_code += morse_table['Morse'][pos] + ' '
